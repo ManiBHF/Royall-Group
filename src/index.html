@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/main.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>گروه رویال</title>
   </head>
   <body>
     <!-- navbar start -->
     <nav class="h-14 w-fullbg-white border-gray-300"></nav>
-    <input type="button" />
+
     <!-- navbar end -->
-    <div x-data="{ showBar: false }">
-      <div :class="{ 'bg-white shadow translate-y-full' : !showBar }" class="transition duration-500 fixed flex h-20 translate-y-full bottom-0 z-50 items-center shadow-lg w-full">
+    <main>
+      <section></section>
+    </main>
+    <!-- navbar mobile -->
+    <div x-data="{ showBar: true }">
+      <div :class="{ 'bg-white shadow translate-y-full' : !showBar }" class="shadow-mobile-menu transition bg-wight duration-500 fixed flex h-20 translate-y-full bottom-0 z-50 items-center w-full">
         <ul class="flex items-center justify-between w-full h-full bg-white px-4" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
           <li>خانه</li>
           <li>پنل کاربری</li>
