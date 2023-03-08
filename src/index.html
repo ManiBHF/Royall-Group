@@ -9,34 +9,38 @@
   </head>
   <body>
     <!-- navbar start -->
-    <nav class="h-14 w-fullbg-white border-gray-300"></nav>
-
-    <!-- navbar end -->
-    <main>
-      <section>
-        <ul>
-          <li>hi</li>
-          <li>h2</li>
-          <li>h2</li>
-          <li>h2</li>
-          <li>h2</li>
-          <li>h2</li>
-          <li>h2</li>
- 
-        </ul>
+    <nav class="h-14 w-full bg-white border border-gray-300 shadow-lg">
+      <section class="container flex justify-between items-center h-full">
+        <!-- hamburger menu -->
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>          
+        </div>
+        <!-- logo -->
+        <div>
+          <img src="./assets/images/Signature-copy-06.svg" width="150px" height="10px" >
+        </div> 
+        <!-- darkmode , direction , proImage -->
+        <div class="flex items-center gap-4 flex-row-reverse">
+          <!-- Avatar -->
+          <a href="#">
+            <img class="w-8 h-8 rounded-full" alt="Avatar" src="./assets/images/crop-circle.gif">
+          </a>
+          <div class="w-10 h-10 rounded-full flex-center hover:shadow-lg cursor-pointer transition-shadow duration-300 ease-in">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+            </svg>            
+          </div>
+        </div>
       </section>
-    </main>
-    <!-- navbar mobile -->
-    <div x-data="{ showBar: flase }">
-      <div :class="{ 'bg-white shadow translate-y-full' : !showBar }" class="shadow-mobile-menu transition bg-wight duration-500 fixed flex h-20 translate-y-full bottom-0 z-50 items-center w-full">
-        <ul class="flex items-center justify-between w-full h-full bg-white px-4" @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
-          <li>خانه</li>
-          <li>پنل کاربری</li>
-          <li>قراردادها</li>
-          <li>تماس با ما</li>
-        </ul>
-      </div>
-    </div>
+    </nav>
+    <!-- navbar end -->
+
+
+
+
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

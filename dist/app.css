@@ -23,6 +23,10 @@
   .border-style {
     @apply border border-gray-300;
   }
+  .flex-center{
+    @apply flex justify-center items-center;
+  }
+
 }
 @tailwind utilities;
 
